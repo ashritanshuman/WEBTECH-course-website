@@ -57,26 +57,15 @@ a {
 }
 
 .auth-blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    pointer-events: none;
+    display: none;
 }
 
 .blob-1 {
-    width: 450px;
-    height: 450px;
-    background: rgba(91, 66, 243, 0.15);
-    top: -120px;
-    left: -120px;
+    display: none;
 }
 
 .blob-2 {
-    width: 450px;
-    height: 450px;
-    background: rgba(37, 99, 235, 0.12);
-    bottom: -120px;
-    right: -120px;
+    display: none;
 }
 
 .auth-container {
@@ -95,7 +84,7 @@ a {
 
 /* ---------------- Left: Brand Perks Side ---------------- */
 .auth-brand-side {
-    background: linear-gradient(145deg, #1e1b4b, #2e1065, #4338ca);
+    background-color: #0f172a;
     color: #ffffff;
     padding: 48px 40px;
     display: flex;
