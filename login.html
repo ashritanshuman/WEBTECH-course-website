@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Learnify | Access Your Learning Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="auth-page-wrapper">
+        <!-- Floating Ambient Blobs -->
+        <div class="auth-blob blob-1"></div>
+        <div class="auth-blob blob-2"></div>
+
+        <div class="auth-container">
+            
+            <!-- Left: Brand Showcase & Testimonial Column -->
+            <div class="auth-brand-side">
+                <div class="brand-top">
+                    <a href="index.html" class="logo-area">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="logo-title">Learnify</span>
+                    </a>
+                </div>
+
+                <div class="brand-middle">
+                    <h2>Welcome Back to Your Growth Sanctuary.</h2>
+                    <p>Continue your interactive lessons, track your mentorship milestones, and resume coding labs where you left off.</p>
+
+                    <!-- Student Quote Card -->
+                    <div class="student-testimonial-card">
+                        <div class="quote-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="quote-text">"Learnify helped me transition from a junior support role to a senior full-stack engineer at a top tech company in under 6 months!"</p>
+                        <div class="quote-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Jessica Miller">
+                            <div>
+                                <strong>Jessica Miller</strong>
+                                <span>Software Engineer @ Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-footer">
+                    <p><i class="fa-solid fa-shield-halved"></i> 256-Bit SSL Encrypted & Protected</p>
+                </div>
+            </div>
+
+            <!-- Right: Login Form Column -->
+            <div class="auth-form-side">
+                <div class="form-wrapper">
+                    
+                    <div class="form-header">
+                        <h1>Sign In</h1>
+                        <p>Enter your credentials to access your Learnify account.</p>
+                    </div>
+
+                    <!-- Social Login Buttons -->
+                    <div class="social-login-grid">
+                        <button type="button" class="btn-social">
+                            <i class="fa-brands fa-google google-color"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="btn-social">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </button>
+                        <button type="button" class="btn-social">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Apple</span>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>or continue with email</span>
+                    </div>
+
+                    <!-- Main Login Form -->
+                    <form class="auth-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Signed in successfully! Redirecting to dashboard...'); window.location.href='coursepage.html';">
+                        
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" id="login-email" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label-row">
+                                <label for="login-password">Password</label>
+                                <a href="contactus.html" class="forgot-link">Forgot password?</a>
+                            </div>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-lock input-icon"></i>
+                                <input type="password" id="login-password" placeholder="••••••••••••" required>
+                                <button type="button" class="password-toggle" onclick="const p=document.getElementById('login-password'); p.type = p.type==='password'?'text':'password';">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox-row">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Remember me for 30 days</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-auth-submit">
+                            <span>Sign In</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <div class="form-footer-link">
+                        <p>Don't have a Learnify account? <a href="signup.html">Create free account &rarr;</a></p>
+                    </div>
+
+                    <div class="legal-mini-links">
+                        <a href="PrivacyPolicy.html">Privacy Policy</a>
+                        <span>•</span>
+                        <a href="TermsAndConditions.html">Terms of Service</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

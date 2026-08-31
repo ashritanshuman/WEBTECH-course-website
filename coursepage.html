@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Courses - Learnify | Master Tech, AI, Design & Business</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./coursepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p><i class="fa-solid fa-fire"></i> New Release: Advanced Generative AI & LLM Systems Track is now live! <a href="#courses" class="announcement-link">View Track</a></p>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Learnify</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="coursepage.html" class="nav-item active">Courses</a>
+                <a href="aboutus.html" class="nav-item">About Us</a>
+                <a href="contactus.html" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-outline">Sign In</a>
+                <a href="signup.html" class="btn-solid">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Catalog Hero -->
+    <section class="catalog-hero">
+        <div class="catalog-hero-blob"></div>
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-graduation-cap"></i> 1,200+ CURATED COURSES & MASTER TRACKS
+            </div>
+            <h1 class="hero-title">
+                Level Up Your Skills With <span class="gradient-text">World-Class Mentors</span>
+            </h1>
+            <p class="hero-subtitle">
+                Explore hands-on curriculum built in collaboration with top engineering leads, designers, and industry pioneers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="catalog-search-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search by course title, skill, or mentor..." id="course-search-input">
+                </div>
+                <button type="button" class="btn-search">Find Courses</button>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="category-pills">
+                <button class="pill active"><i class="fa-solid fa-layer-group"></i> All Courses</button>
+                <button class="pill"><i class="fa-solid fa-code"></i> Web Development</button>
+                <button class="pill"><i class="fa-solid fa-brain"></i> AI & Machine Learning</button>
+                <button class="pill"><i class="fa-solid fa-database"></i> Data Science</button>
+                <button class="pill"><i class="fa-solid fa-cloud"></i> Cloud & DevOps</button>
+                <button class="pill"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</button>
+                <button class="pill"><i class="fa-solid fa-shield-virus"></i> Cybersecurity</button>
+                <button class="pill"><i class="fa-solid fa-chart-line"></i> Business & Tech</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Course Catalog Content -->
+    <section class="catalog-main-section" id="courses">
+        <div class="section-container">
+            
+            <!-- Controls Bar: Results Count & Sort Dropdown -->
+            <div class="catalog-toolbar">
+                <div class="results-info">
+                    Showing <strong>8</strong> featured master courses
+                </div>
+                <div class="toolbar-actions">
+                    <div class="sort-wrapper">
+                        <label for="sort-select"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort By:</label>
+                        <select id="sort-select">
+                            <option value="popular">Most Popular</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="newest">Newest Releases</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Cards Grid -->
+            <div class="course-cards-grid">
+
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=600&q=80" alt="Full-Stack Web Development">
+                        <span class="category-tag tag-web">Web Dev</span>
+                        <span class="level-tag">Beginner to Pro</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <span class="score">4.9</span>
+                            <span class="reviews">(3,420 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Full-Stack Modern Web Bootcamp: React, Node.js & Next.js</h3>
+                        <p class="course-desc">Master front-end and back-end web architecture, databases, secure authentication, and deployment.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 48 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 142 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Rodriguez" class="inst-avatar">
+                            <span class="inst-name">David Rodriguez</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹3,499</span>
+                                <span class="original-price">₹9,999</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80" alt="Generative AI & LLMs">
+                        <span class="category-tag tag-ai">AI & ML</span>
+                        <span class="level-tag">Intermediate</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="score">5.0</span>
+                            <span class="reviews">(1,890 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Generative AI Engineering: Fine-Tuning, RAG & LLM Agents</h3>
+                        <p class="course-desc">Build production-grade autonomous agent systems, vector databases, and multi-modal AI applications.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 36 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 98 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins" class="inst-avatar">
+                            <span class="inst-name">Sarah Jenkins</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹4,499</span>
+                                <span class="original-price">₹12,499</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Data Science with Python">
+                        <span class="category-tag tag-data">Data Science</span>
+                        <span class="level-tag">All Levels</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="score">4.9</span>
+                            <span class="reviews">(3,120 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Data Science & Machine Learning with Python & Scikit-Learn</h3>
+                        <p class="course-desc">Statistical modeling, Pandas, predictive modeling algorithms, Deep Learning with PyTorch, and Tableau.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 44 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 120 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Chen" class="inst-avatar">
+                            <span class="inst-name">Marcus Chen</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹2,999</span>
+                                <span class="original-price">₹8,999</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="UI/UX Product Design">
+                        <span class="category-tag tag-design">UI / UX</span>
+                        <span class="level-tag">Beginner</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="score">4.9</span>
+                            <span class="reviews">(2,750 reviews)</span>
+                        </div>
+                        <h3 class="course-title">UI/UX Design Mastertrack: Figma, Design Systems & Prototyping</h3>
+                        <p class="course-desc">User research, wireframing, micro-interactions, responsive design systems, and client presentation.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 32 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 86 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="inst-avatar">
+                            <span class="inst-name">Elena Rostova</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹2,799</span>
+                                <span class="original-price">₹8,499</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=600&q=80" alt="Cloud & DevOps">
+                        <span class="category-tag tag-cloud">Cloud & DevOps</span>
+                        <span class="level-tag">Advanced</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="score">4.9</span>
+                            <span class="reviews">(1,430 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Docker, Kubernetes & AWS Cloud DevOps Engineering</h3>
+                        <p class="course-desc">Automate CI/CD pipelines, container orchestration, Terraform infrastructure as code, and observability.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 40 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 110 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Chen" class="inst-avatar">
+                            <span class="inst-name">Marcus Chen</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹3,999</span>
+                                <span class="original-price">₹11,499</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Cybersecurity & Ethical Hacking">
+                        <span class="category-tag tag-security">Cybersecurity</span>
+                        <span class="level-tag">Intermediate</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <span class="score">4.8</span>
+                            <span class="reviews">(980 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Practical Ethical Hacking & Offensive Security Defense</h3>
+                        <p class="course-desc">Penetration testing, network security, web app vulnerability scanning, and real-world attack mitigation.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 38 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 95 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Rodriguez" class="inst-avatar">
+                            <span class="inst-name">David Rodriguez</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹3,699</span>
+                                <span class="original-price">₹10,999</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 7 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Product Management">
+                        <span class="category-tag tag-biz">Business</span>
+                        <span class="level-tag">All Levels</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="score">4.9</span>
+                            <span class="reviews">(1,620 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Tech Product Management: Strategy, Metrics & Scaling</h3>
+                        <p class="course-desc">Roadmapping, agile scrum workflows, A/B testing, unit economics, and executive stakeholder alignment.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 28 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 70 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="inst-avatar">
+                            <span class="inst-name">Elena Rostova</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹2,499</span>
+                                <span class="original-price">₹7,499</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 8 -->
+                <div class="course-card">
+                    <div class="card-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Mobile App Development">
+                        <span class="category-tag tag-web">Mobile</span>
+                        <span class="level-tag">Beginner to Pro</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating-row">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <span class="score">4.8</span>
+                            <span class="reviews">(1,180 reviews)</span>
+                        </div>
+                        <h3 class="course-title">Cross-Platform Mobile Apps: Flutter & Dart Masterclass</h3>
+                        <p class="course-desc">Build iOS & Android apps with clean state management, REST API integration, and App Store submission.</p>
+                        
+                        <div class="meta-row">
+                            <span><i class="fa-regular fa-clock"></i> 34 Hours</span>
+                            <span><i class="fa-solid fa-book-open"></i> 90 Lessons</span>
+                            <span><i class="fa-solid fa-certificate"></i> Verified Cert</span>
+                        </div>
+
+                        <div class="instructor-row">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Rodriguez" class="inst-avatar">
+                            <span class="inst-name">David Rodriguez</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="current-price">₹3,299</span>
+                                <span class="original-price">₹9,499</span>
+                            </div>
+                            <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-wrapper">
+                <button class="page-btn disabled"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                <div class="page-numbers">
+                    <button class="num-btn active">1</button>
+                    <button class="num-btn">2</button>
+                    <button class="num-btn">3</button>
+                    <span class="dots">...</span>
+                    <button class="num-btn">12</button>
+                </div>
+                <button class="page-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Learning Track Banner -->
+    <section class="track-banner-section">
+        <div class="section-container">
+            <div class="track-banner">
+                <div class="track-info">
+                    <span class="badge-accent">ALL-INCLUSIVE MEMBERSHIP</span>
+                    <h2>Unlock Unlimited Access to All 1,200+ Courses</h2>
+                    <p>Upgrade to Learnify Pro for ₹1,499/mo or ₹9,999/yr. Includes all certificates, mentor office hours, and private Discord community.</p>
+                    <div class="track-perks">
+                        <span><i class="fa-solid fa-check"></i> Unlimited HD Videos</span>
+                        <span><i class="fa-solid fa-check"></i> Interactive Labs</span>
+                        <span><i class="fa-solid fa-check"></i> 1-on-1 Mentor Calls</span>
+                    </div>
+                </div>
+                <div class="track-action">
+                    <a href="signup.html" class="btn-banner">Try Learnify Pro Free &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Learnify</h2>
+                </div>
+
+                <p>
+                    Empowering learners worldwide with
+                    high-quality online education and
+                    practical skills.
+                </p>
+
+                <div class="social-icons">
+
+                    <div class="fb">
+                        <a href="https://facebook.com" target="_blank" class="FB">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                    <div class="x">
+                        <a href="https://twitter.com" target="_blank" class="X">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="li">
+                        <a href="https://linkedin.com" target="_blank" class="LI">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="IG">
+                        <a href="https://instagram.com" target="_blank" class="IG">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="YT">
+                        <a href="https://youtube.com" target="_blank" class="yt">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="coursepage.html">Courses</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="aboutus.html#instructors">Instructors</a>
+                <a href="contactus.html">Contact</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a href="contactus.html">Help Center</a>
+                <a href="TermsAndConditions.html">Terms of Use</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="RefundPolicy.html">Refund Policy</a>
+                <a href="contactus.html#faq">FAQ</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Company</h3>
+
+                <a href="aboutus.html">About Us</a>
+                <a href="aboutus.html#mission">Our Mission</a>
+                <a href="aboutus.html#instructors">Become an Instructor</a>
+                <a href="contactus.html">Affiliate Program</a>
+                <a href="contactus.html">Contact Us</a>
+
+            </div>
+
+            <div class="footer-column support">
+
+                <h3>Support</h3>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    support@learnify.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +1 234 567 8900
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Mon - Fri 9AM - 6PM
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 Learnify. All rights reserved.
+            </p>
+
+            <div>
+                <a href="TermsAndConditions.html">Terms of Use</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="RefundPolicy.html">Refund Policy</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

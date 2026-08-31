@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Learnify | Start Your Free Learning Journey</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="auth-page-wrapper">
+        <!-- Ambient Blobs -->
+        <div class="auth-blob blob-1"></div>
+        <div class="auth-blob blob-2"></div>
+
+        <div class="auth-container">
+            
+            <!-- Left: Brand Perks Column -->
+            <div class="auth-brand-side">
+                <div class="brand-top">
+                    <a href="index.html" class="logo-area">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="logo-title">Learnify</span>
+                    </a>
+                </div>
+
+                <div class="brand-middle">
+                    <h2>Join 50,000+ Learners Building the Future.</h2>
+                    <p>Create your free account today and immediately access our introductory masterclasses, code playgrounds, and global community.</p>
+
+                    <div class="perks-list">
+                        <div class="perk-item">
+                            <div class="perk-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <strong>Free 7-Day Master Track Trial</strong>
+                                <p>Test drive our top-rated bootcamps with zero upfront cost.</p>
+                            </div>
+                        </div>
+
+                        <div class="perk-item">
+                            <div class="perk-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div>
+                                <strong>Verified Industry Credentials</strong>
+                                <p>Earn blockchain-verified certificates upon course completion.</p>
+                            </div>
+                        </div>
+
+                        <div class="perk-item">
+                            <div class="perk-icon"><i class="fa-solid fa-users"></i></div>
+                            <div>
+                                <strong>Global Peer & Mentor Network</strong>
+                                <p>Connect with peers, get direct feedback, and build together.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-footer">
+                    <p><i class="fa-solid fa-check-circle"></i> No credit card required to start free tier</p>
+                </div>
+            </div>
+
+            <!-- Right: Sign Up Form Column -->
+            <div class="auth-form-side">
+                <div class="form-wrapper">
+                    
+                    <div class="form-header">
+                        <h1>Create Your Account</h1>
+                        <p>Sign up in less than 60 seconds.</p>
+                    </div>
+
+                    <!-- Social Signup Buttons -->
+                    <div class="social-login-grid">
+                        <button type="button" class="btn-social">
+                            <i class="fa-brands fa-google google-color"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="btn-social">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </button>
+                        <button type="button" class="btn-social">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Apple</span>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>or register with email</span>
+                    </div>
+
+                    <!-- Sign Up Form -->
+                    <form class="auth-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Account created successfully! Welcome to Learnify.'); window.location.href='coursepage.html';">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="signup-first">First Name</label>
+                                <input type="text" id="signup-first" placeholder="e.g. Alex" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-last">Last Name</label>
+                                <input type="text" id="signup-last" placeholder="e.g. Morgan" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" id="signup-email" placeholder="alex.morgan@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Create Password</label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-lock input-icon"></i>
+                                <input type="password" id="signup-password" placeholder="At least 8 characters" required oninput="updateStrength(this.value)">
+                                <button type="button" class="password-toggle" onclick="const p=document.getElementById('signup-password'); p.type = p.type==='password'?'text':'password';">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                            <!-- Strength Indicator -->
+                            <div class="strength-meter">
+                                <div class="strength-bar" id="strength-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>I am joining Learnify to:</label>
+                            <div class="role-selector">
+                                <label class="role-option">
+                                    <input type="radio" name="goal" value="learn" checked>
+                                    <span><i class="fa-solid fa-user-graduate"></i> Learn Skills</span>
+                                </label>
+                                <label class="role-option">
+                                    <input type="radio" name="goal" value="career">
+                                    <span><i class="fa-solid fa-briefcase"></i> Switch Careers</span>
+                                </label>
+                                <label class="role-option">
+                                    <input type="radio" name="goal" value="teach">
+                                    <span><i class="fa-solid fa-chalkboard-user"></i> Teach</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox-row">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">I agree to the <a href="TermsAndConditions.html">Terms of Service</a> & <a href="PrivacyPolicy.html">Privacy Policy</a>.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-auth-submit">
+                            <span>Get Started Free</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <div class="form-footer-link">
+                        <p>Already have an account? <a href="login.html">Sign in here &rarr;</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function updateStrength(val) {
+            const bar = document.getElementById('strength-bar');
+            if (val.length === 0) {
+                bar.style.width = '0%';
+                bar.style.backgroundColor = '#e2e8f0';
+            } else if (val.length < 6) {
+                bar.style.width = '33%';
+                bar.style.backgroundColor = '#ef4444';
+            } else if (val.length < 10) {
+                bar.style.width = '66%';
+                bar.style.backgroundColor = '#f59e0b';
+            } else {
+                bar.style.width = '100%';
+                bar.style.backgroundColor = '#10b981';
+            }
+        }
+    </script>
+</body>
+</html>

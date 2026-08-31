@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Learnify | We're Here to Help You Succeed</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p><i class="fa-solid fa-headset"></i> Need help choosing the right learning track? Speak with our course advisors today! <a href="#contact-form-section" class="announcement-link">Get in Touch</a></p>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Learnify</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="coursepage.html" class="nav-item">Courses</a>
+                <a href="aboutus.html" class="nav-item">About Us</a>
+                <a href="contactus.html" class="nav-item active">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-outline">Sign In</a>
+                <a href="signup.html" class="btn-solid">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-blob"></div>
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-regular fa-paper-plane"></i> LET'S CONNECT
+            </div>
+            <h1 class="hero-title">
+                We're Here to Support Your <span class="gradient-text">Learning Journey</span>
+            </h1>
+            <p class="hero-subtitle">
+                Have questions about our curriculum, enterprise training, enrollment options, or technical support? Our friendly team is ready to assist you 24/7.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Channels Cards -->
+    <section class="contact-channels-section">
+        <div class="section-container">
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <div class="channel-icon purple"><i class="fa-regular fa-envelope"></i></div>
+                    <h3>Email Support</h3>
+                    <p>Send us an email anytime and our student success team will respond within 24 hours.</p>
+                    <a href="mailto:support@learnify.com" class="channel-link">support@learnify.com &rarr;</a>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-icon blue"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h3>Phone Support</h3>
+                    <p>Speak directly with an academic admissions advisor during business hours.</p>
+                    <a href="tel:+12345678900" class="channel-link">+1 (234) 567-8900 &rarr;</a>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-icon green"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Live Chat</h3>
+                    <p>Chat in real-time with our student support team for immediate assistance.</p>
+                    <a href="#contact-form-section" class="channel-link">Start Instant Chat &rarr;</a>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-icon yellow"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Global Headquarters</h3>
+                    <p>500 Tech Vista Way, Suite 400<br>San Francisco, CA 94105, USA</p>
+                    <a href="#location" class="channel-link">View On Map &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Grid -->
+    <section class="contact-form-section" id="contact-form-section">
+        <div class="section-container">
+            <div class="form-layout-grid">
+                
+                <!-- Left: Form Card -->
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we will get back to you shortly.</p>
+                    </div>
+
+                    <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name <span class="required">*</span></label>
+                                <input type="text" id="first-name" placeholder="e.g. Alex" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name <span class="required">*</span></label>
+                                <input type="text" id="last-name" placeholder="e.g. Morgan" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" placeholder="alex.morgan@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">How Can We Help You? <span class="required">*</span></label>
+                            <select id="topic" required>
+                                <option value="" disabled selected>Select an inquiry category</option>
+                                <option value="course-enrollment">Course Enrollment & Tracks</option>
+                                <option value="career-mentorship">1-on-1 Career Mentorship</option>
+                                <option value="enterprise">Enterprise / Team Subscriptions</option>
+                                <option value="technical">Technical Support & Platform Help</option>
+                                <option value="billing">Billing & Refund Questions</option>
+                                <option value="instructor">Become an Instructor</option>
+                                <option value="other">Other Inquiries</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" rows="5" placeholder="Please describe your question or requirements in detail..." required></textarea>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent">I agree to Learnify's <a href="PrivacyPolicy.html">Privacy Policy</a> and consent to receiving email responses.</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Support Perks & Details -->
+                <div class="support-info-sidebar">
+                    <div class="info-box">
+                        <h3>Operating Hours</h3>
+                        <ul class="schedule-list">
+                            <li>
+                                <span>Monday – Friday:</span>
+                                <strong>8:00 AM – 8:00 PM EST</strong>
+                            </li>
+                            <li>
+                                <span>Saturday:</span>
+                                <strong>9:00 AM – 5:00 PM EST</strong>
+                            </li>
+                            <li>
+                                <span>Sunday:</span>
+                                <strong>Technical Support Only</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <div class="info-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>Fast Response Guarantee</h3>
+                        <p>Our dedicated admissions & student support coordinators maintain an average response time of under <strong>2 hours</strong> during standard working hours.</p>
+                    </div>
+
+                    <div class="info-box enterprise-box">
+                        <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3>Looking for Enterprise Solutions?</h3>
+                        <p>Upskill your entire engineering, product, or design team with custom cohorts, dedicated dashboards, and tailored curriculums.</p>
+                        <a href="mailto:enterprise@learnify.com" class="btn-sidebar">Contact Enterprise Sales &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="contact-faq-section" id="faq">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="subheading">FREQUENTLY ASKED QUESTIONS</span>
+                <h2>Quick Answers to Common Questions</h2>
+                <p>Find fast answers to our most popular questions regarding learning with Learnify.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span>How do Learnify courses and mentorship sessions work?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>All Learnify courses combine self-paced HD video lectures, hands-on interactive coding labs, and weekly live group mentorship sessions. You can also book 1-on-1 project code reviews with senior industry mentors.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Do I receive a certificate upon course completion?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes! Upon successfully completing all required coursework and passing the capstone project evaluation, you receive an industry-recognized, cryptographically verified Certificate of Completion that you can share directly to LinkedIn.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What is your cancellation and refund policy?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>We provide a 100% risk-free 30-Day Money-Back Guarantee on all individual course purchases and annual tracks. If you are not completely satisfied, simply reach out to support for a prompt refund. Check out our <a href="RefundPolicy.html">Refund Policy</a> page for full details.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Can I access courses on mobile devices and offline?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes, Learnify is fully responsive across all modern mobile devices and tablets. You can stream content seamlessly or download course slides and reference cheat sheets for offline review.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How can I apply to become an instructor or mentor?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>We are always eager to collaborate with seasoned tech leads, designers, and educators. Fill out the contact form above with the "Become an Instructor" subject, and our academic talent team will review your portfolio.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Learnify</h2>
+                </div>
+
+                <p>
+                    Empowering learners worldwide with
+                    high-quality online education and
+                    practical skills.
+                </p>
+
+                <div class="social-icons">
+
+                    <div class="fb">
+                        <a href="https://facebook.com" target="_blank" class="FB">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                    <div class="x">
+                        <a href="https://twitter.com" target="_blank" class="X">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="li">
+                        <a href="https://linkedin.com" target="_blank" class="LI">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="IG">
+                        <a href="https://instagram.com" target="_blank" class="IG">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="YT">
+                        <a href="https://youtube.com" target="_blank" class="yt">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="coursepage.html">Courses</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="aboutus.html#instructors">Instructors</a>
+                <a href="contactus.html">Contact</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a href="contactus.html">Help Center</a>
+                <a href="TermsAndConditions.html">Terms of Use</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="RefundPolicy.html">Refund Policy</a>
+                <a href="contactus.html#faq">FAQ</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Company</h3>
+
+                <a href="aboutus.html">About Us</a>
+                <a href="aboutus.html#mission">Our Mission</a>
+                <a href="aboutus.html#instructors">Become an Instructor</a>
+                <a href="contactus.html">Affiliate Program</a>
+                <a href="contactus.html">Contact Us</a>
+
+            </div>
+
+            <div class="footer-column support">
+
+                <h3>Support</h3>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    support@learnify.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +1 234 567 8900
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Mon - Fri 9AM - 6PM
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 Learnify. All rights reserved.
+            </p>
+
+            <div>
+                <a href="TermsAndConditions.html">Terms of Use</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="RefundPolicy.html">Refund Policy</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
