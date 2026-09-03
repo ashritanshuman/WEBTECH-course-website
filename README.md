@@ -84,9 +84,3 @@ The site deploys automatically to GitHub Pages on every push to `main` via the w
 - FAQ accordion using native `<details>`/`<summary>` elements
 - Split-screen authentication pages with social login buttons
 - Legal pages with sticky sidebar navigation
-
-## Notes
-
-- All forms are front-end only -- no backend or API integration exists
-- Interactive elements (filters, sort, pagination, billing toggle) are visual placeholders
-- All images are loaded from external URLs (no local image assets)
