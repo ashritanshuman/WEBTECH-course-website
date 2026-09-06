@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Learnify - Contact Us Dedicated Stylesheet (contactus.css)
-   ========================================================================== */
-
 :root {
     --primary: #5b42f3;
     --primary-hover: #4a31de;
@@ -53,7 +49,7 @@ a {
 
 
 
-/* ---------------- Hero Section ---------------- */
+
 .contact-hero {
     position: relative;
     padding: 70px 24px 50px;
