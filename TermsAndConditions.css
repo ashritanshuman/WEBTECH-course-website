@@ -46,9 +46,6 @@ a {
     transition: all 0.25s ease;
 }
 
-
-
-/* ---------------- Terms Hero ---------------- */
 .terms-hero {
     background-color: #f8fafc;
     padding: 60px 24px 40px;
@@ -98,7 +95,6 @@ a {
     gap: 6px;
 }
 
-/* ---------------- Main Terms Layout ---------------- */
 .terms-content-section {
     padding: 60px 24px 80px;
 }
@@ -156,7 +152,6 @@ a {
     background-color: var(--primary-light);
 }
 
-/* ---------------- Terms Articles ---------------- */
 .terms-articles {
     background: var(--bg-white);
     border: 1px solid var(--border-color);
@@ -234,7 +229,6 @@ a {
     width: 18px;
 }
 
-/* ---------------- Footer ---------------- */
 .footer {
     background: #0F172A;
     color: #FFFFFF;
@@ -430,7 +424,6 @@ a {
     color: #60A5FA;
 }
 
-/* ---------------- Responsive Breakpoints ---------------- */
 @media (max-width: 992px) {
     .terms-layout-container {
         grid-template-columns: 1fr;

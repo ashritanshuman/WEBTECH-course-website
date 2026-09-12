@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Learnify - About Us Dedicated Stylesheet (aboutus.css)
-   ========================================================================== */
+
 
 :root {
     --primary: #5b42f3;
@@ -55,9 +53,6 @@ ul {
     list-style: none;
 }
 
-
-
-/* ---------------- Hero Section ---------------- */
 .about-hero {
     position: relative;
     padding: 80px 24px 70px;
@@ -172,7 +167,6 @@ ul {
     font-weight: 500;
 }
 
-/* ---------------- Section Generic ---------------- */
 .section-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -207,7 +201,6 @@ ul {
     font-size: 16px;
 }
 
-/* ---------------- Mission & Vision ---------------- */
 .mission-vision-section {
     background-color: var(--bg-white);
 }
@@ -281,7 +274,6 @@ ul {
     font-size: 16px;
 }
 
-/* ---------------- Core Values ---------------- */
 .values-section {
     background-color: var(--bg-page);
 }
@@ -340,7 +332,6 @@ ul {
     line-height: 1.6;
 }
 
-/* ---------------- Instructors & Team ---------------- */
 .team-section {
     background-color: var(--bg-white);
 }
@@ -443,7 +434,6 @@ ul {
     line-height: 1.5;
 }
 
-/* ---------------- CTA Section ---------------- */
 .about-cta-section {
     padding: 30px 24px 80px;
     background-color: var(--bg-white);
@@ -514,7 +504,6 @@ ul {
     transform: translateY(-2px);
 }
 
-/* ---------------- Footer ---------------- */
 .footer {
     background: #0F172A;
     color: #FFFFFF;
@@ -709,7 +698,6 @@ ul {
     color: #60A5FA;
 }
 
-/* ---------------- Responsive Breakpoints ---------------- */
 @media (max-width: 1024px) {
     .hero-metrics-grid,
     .values-grid,

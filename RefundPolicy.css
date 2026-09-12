@@ -46,9 +46,6 @@ a {
     transition: all 0.25s ease;
 }
 
-
-
-
 .refund-hero {
     background-color: #f8fafc;
     padding: 60px 24px 40px;
@@ -97,7 +94,6 @@ a {
     font-weight: 500;
 }
 
-/* ---------------- Process Steps Grid ---------------- */
 .process-section {
     padding: 40px 24px 20px;
     background-color: var(--bg-white);
@@ -166,7 +162,6 @@ a {
     line-height: 1.6;
 }
 
-/* ---------------- Main Content Layout ---------------- */
 .refund-content-section {
     padding: 60px 24px 80px;
 }
@@ -298,7 +293,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* ---------------- Footer ---------------- */
 .footer {
     background: #0F172A;
     color: #FFFFFF;
@@ -494,8 +488,6 @@ a {
     color: #60A5FA;
 }
 
-
-/* ---------------- Responsive Breakpoints ---------------- */
 @media (max-width: 900px) {
     .process-grid {
         grid-template-columns: 1fr;

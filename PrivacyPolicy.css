@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Learnify - Privacy Policy Dedicated Stylesheet (PrivacyPolicy.css)
-   ========================================================================== */
+
 
 :root {
     --primary: #5b42f3;
@@ -50,9 +48,6 @@ a {
     transition: all 0.25s ease;
 }
 
-
-
-/* ---------------- Legal Hero ---------------- */
 .legal-hero {
     background-color: #f8fafc;
     padding: 60px 24px 40px;
@@ -102,7 +97,6 @@ a {
     gap: 6px;
 }
 
-/* ---------------- Legal Layout & TOC ---------------- */
 .legal-content-section {
     padding: 60px 24px 80px;
 }
@@ -160,7 +154,6 @@ a {
     background-color: var(--primary-light);
 }
 
-/* ---------------- Legal Articles ---------------- */
 .legal-articles {
     background: var(--bg-white);
     border: 1px solid var(--border-color);
@@ -273,7 +266,6 @@ a {
     width: 18px;
 }
 
-/* ---------------- Footer ---------------- */
 .footer {
     background: #0F172A;
     color: #FFFFFF;
@@ -469,7 +461,6 @@ a {
     color: #60A5FA;
 }
 
-/* ---------------- Responsive ---------------- */
 @media (max-width: 992px) {
     .legal-layout-container {
         grid-template-columns: 1fr;

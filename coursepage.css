@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Learnify - Course Catalog Dedicated Stylesheet (coursepage.css)
-   ========================================================================== */
+
 
 :root {
     --primary: #5b42f3;
@@ -50,9 +48,6 @@ a {
     transition: all 0.25s ease;
 }
 
-
-
-/* ---------------- Catalog Hero ---------------- */
 .catalog-hero {
     position: relative;
     padding: 70px 24px 50px;
@@ -196,7 +191,6 @@ a {
     box-shadow: 0 4px 12px rgba(91, 66, 243, 0.25);
 }
 
-/* ---------------- Main Catalog ---------------- */
 .section-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -249,7 +243,6 @@ a {
     cursor: pointer;
 }
 
-/* ---------------- Course Cards Grid ---------------- */
 .course-cards-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -462,7 +455,6 @@ a {
     box-shadow: 0 4px 10px rgba(91, 66, 243, 0.3);
 }
 
-/* ---------------- Pagination ---------------- */
 .pagination-wrapper {
     display: flex;
     justify-content: center;
@@ -530,7 +522,6 @@ a {
     padding: 0 4px;
 }
 
-/* ---------------- Track Banner ---------------- */
 .track-banner-section {
     padding: 20px 24px 80px;
 }
@@ -596,7 +587,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* ---------------- Footer ---------------- */
 .footer {
     background: #0F172A;
     color: #FFFFFF;
@@ -791,7 +781,6 @@ a {
     color: #60A5FA;
 }
 
-/* ---------------- Responsive Breakpoints ---------------- */
 @media (max-width: 1200px) {
     .course-cards-grid {
         grid-template-columns: repeat(3, 1fr);

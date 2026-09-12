@@ -1,6 +1,5 @@
 
 
-
 :root {
     --primary: #5b42f3;
     --primary-hover: #4a31de;
@@ -81,7 +80,6 @@ a {
     z-index: 10;
 }
 
-/* ---------------- Left: Brand Perks Side ---------------- */
 .auth-brand-side {
     background-color: #0f172a;
     color: #ffffff;
@@ -189,7 +187,6 @@ a {
     color: #34d399;
 }
 
-/* ---------------- Right: Sign Up Form Side ---------------- */
 .auth-form-side {
     padding: 44px 44px;
     display: flex;
@@ -458,7 +455,6 @@ a {
     font-weight: 700;
 }
 
-/* ---------------- Responsive ---------------- */
 @media (max-width: 900px) {
     .auth-container {
         grid-template-columns: 1fr;

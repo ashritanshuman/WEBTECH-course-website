@@ -172,7 +172,7 @@ ul {
 
 .hero-section {
     background-color: #f3f2ff;
-    min-height: calc(100vh - 105px);
+    min-height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +191,7 @@ ul {
     background-color: #72d9cc;
     border-radius: 50% 50% 60% 40%;
     z-index: 1;
-    /* opacity: 0.9; */
+    opacity: 0.9;
 }
 
 .blob-yellow-right {
@@ -248,6 +248,8 @@ ul {
 .hero-section .hero-search-box {
     display: flex;
     align-items: center;
+    
+
     background-color: #ffffff;
     border: 2px solid #e0e0ee;
     border-radius: 14px;
@@ -261,6 +263,7 @@ ul {
 .hero-section .search-input-wrapper {
     display: flex;
     align-items: center;
+    
     flex-grow: 1;
     gap: 14px;
 }
@@ -295,7 +298,7 @@ ul {
 }
 
 .hero-section .hero-search-btn:hover {
-    background-color: #2647eb;
+    background-color: #0b1339;
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(59, 91, 253, 0.35);
 }
@@ -1736,7 +1739,6 @@ ul {
   padding: 0;
 }
 
-
 .social-icons a:hover {
   background-color: #111;
   color: #fff;
@@ -1838,7 +1840,6 @@ ul {
   color: #60A5FA;
 }
 
-/* ---------------- Tablet & Medium Screens (<= 1024px) ---------------- */
 @media (max-width: 1024px) {
     .header-container {
         padding: 14px 20px;
@@ -1931,7 +1932,6 @@ ul {
     }
 }
 
-/* ---------------- Tablet Portrait & Small Laptops (<= 992px) ---------------- */
 @media (max-width: 992px) {
     .header-container {
         flex-wrap: wrap;
@@ -1988,7 +1988,6 @@ ul {
     }
 }
 
-/* ---------------- Large Mobile & Phablets (<= 768px) ---------------- */
 @media (max-width: 768px) {
     .announcement-bar {
         font-size: 13px;
@@ -2053,7 +2052,6 @@ ul {
     }
 }
 
-/* ---------------- Mobile Screens (<= 640px) ---------------- */
 @media (max-width: 640px) {
     .header-container {
         padding: 10px 16px;
@@ -2135,7 +2133,6 @@ ul {
     }
 }
 
-/* ---------------- Small Mobile Screens (<= 480px) ---------------- */
 @media (max-width: 480px) {
     .header-container {
         padding: 8px 12px;

@@ -47,9 +47,6 @@ a {
     transition: all 0.25s ease;
 }
 
-
-
-
 .contact-hero {
     position: relative;
     padding: 70px 24px 50px;
@@ -106,7 +103,6 @@ a {
     line-height: 1.7;
 }
 
-/* ---------------- Contact Channels ---------------- */
 .section-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -182,7 +178,6 @@ a {
     transform: translateX(4px);
 }
 
-/* ---------------- Form Layout & Sidebar ---------------- */
 .contact-form-section {
     background-color: var(--bg-white);
     border-top: 1px solid var(--border-color);
@@ -320,7 +315,6 @@ a {
     box-shadow: 0 6px 18px rgba(91, 66, 243, 0.4);
 }
 
-/* ---------------- Sidebar Info ---------------- */
 .support-info-sidebar {
     display: flex;
     flex-direction: column;
@@ -417,7 +411,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* ---------------- FAQ Accordion ---------------- */
 .contact-faq-section {
     background-color: var(--bg-page);
     padding: 60px 24px 80px;
@@ -511,7 +504,6 @@ a {
     text-decoration: underline;
 }
 
-/* ---------------- Footer ---------------- */
 .footer {
     background: #0F172A;
     color: #FFFFFF;
@@ -706,7 +698,6 @@ a {
     color: #60A5FA;
 }
 
-/* ---------------- Responsive Breakpoints ---------------- */
 @media (max-width: 1024px) {
     .channels-grid {
         grid-template-columns: repeat(2, 1fr);
